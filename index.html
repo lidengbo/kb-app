@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>日得</title>
+<meta name="description" content="个人云端知识库">
+<meta name="theme-color" content="#FAF8F5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="日得">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+
+<main id="app">
+  <div class="loading"><div class="spinner"></div><p>正在打开…</p></div>
+</main>
+
+<nav class="tabbar">
+  <a href="#/" data-tab="/">
+    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+    <span>时间流</span>
+  </a>
+  <a href="#/search" data-tab="/search">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+    <span>搜索</span>
+  </a>
+  <a href="#/new" data-tab="/new" class="write-btn">
+    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+    <span>写</span>
+  </a>
+  <a href="#/ask" data-tab="/ask">
+    <svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>
+    <span>问</span>
+  </a>
+  <a href="#/settings" data-tab="/settings">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+    <span>设置</span>
+  </a>
+</nav>
+
+<div id="toast" class="toast"></div>
+
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>
